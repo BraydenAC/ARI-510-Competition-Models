@@ -1,0 +1,479 @@
+id,Ground truth
+262,maintenance/other
+2103,maintenance/other
+374,maintenance/other
+2310,code refactoring
+2170,feature addition
+2176,maintenance/other
+44,maintenance/other
+300,feature addition
+69,maintenance/other
+157,feature addition
+2135,maintenance/other
+342,feature addition
+2325,maintenance/other
+2284,"code refactoring, maintenance/other"
+336,Not enough inforamtion
+187,maintenance/other
+2182,maintenance/other
+393,maintenance/other
+237,maintenance/other
+2272,maintenance/other
+227,feature addition
+135,code refactoring
+167,maintenance/other
+141,code refactoring
+224,bug fix
+2253,code refactoring
+195,feature addition
+2132,maintenance/other
+2063,code refactoring
+188,code refactoring
+2294,maintenance/other
+2231,bug fix
+2085,maintenance/other
+2082,maintenance/other
+19,maintenance/other
+2092,code refactoring
+111,code refactoring
+59,maintenance/other
+2257,code refactoring
+2307,maintenance/other
+154,maintenance/other
+99,bug fix
+145,bug fix
+258,Not enough inforamtion
+62,maintenance/other
+303,maintenance/other
+2097,maintenance/other
+197,code refactoring
+267,code refactoring
+347,feature addition
+2117,bug fix
+2139,code refactoring
+299,bug fix
+2127,bug fix
+128,bug fix
+2081,maintenance/other
+2075,maintenance/other
+2249,code refactoring
+82,feature addition
+367,code refactoring
+2207,maintenance/other
+169,code refactoring
+2254,feature addition
+365,maintenance/other
+387,code refactoring
+2108,code refactoring
+343,code refactoring
+2203,maintenance/other
+351,code refactoring
+179,maintenance/other
+414,code refactoring
+378,bug fix
+2277,maintenance/other
+2102,maintenance/other
+2262,"feature addition, bug fix"
+316,"bug fix, feature addition"
+47,maintenance/other
+151,bug fix
+2296,code refactoring
+210,code refactoring
+2098,code refactoring
+109,code refactoring
+2248,code refactoring
+230,maintenance/other
+294,maintenance/other
+2158,code refactoring
+310,feature addition
+236,code refactoring
+244,code refactoring
+106,code refactoring
+2073,maintenance/other
+404,code refactoring
+2116,code refactoring
+2241,code refactoring
+215,feature addition
+20,maintenance/other
+285,maintenance/other
+11,maintenance/other
+40,code refactoring
+2201,code refactoring
+2099,maintenance/other
+297,bug fix
+133,code refactoring
+36,maintenance/other
+2198,maintenance/other
+176,code refactoring
+357,Not enough inforamtion
+155,maintenance/other
+2322,feature addition
+146,feature addition
+207,code refactoring
+70,maintenance/other
+58,maintenance/other
+2129,maintenance/other
+234,code refactoring
+137,feature addition
+323,code refactoring
+2208,code refactoring
+2123,maintenance/other
+38,maintenance/other
+2061,maintenance/other
+158,code refactoring
+2162,maintenance/other
+92,code refactoring
+39,maintenance/other
+46,Not enough inforamtion
+2245,maintenance/other
+264,maintenance/other
+2112,maintenance/other
+189,bug fix
+2267,maintenance/other
+2067,code refactoring
+2113,code refactoring
+400,maintenance/other
+346,bug fix
+2309,code refactoring
+2069,code refactoring
+232,maintenance/other
+206,maintenance/other
+2101,maintenance/other
+174,bug fix
+126,feature addition
+371,feature addition
+339,maintenance/other
+2221,code refactoring
+394,Not enough inforamtion
+282,Not enough inforamtion
+25,maintenance/other
+9,feature addition
+417,maintenance/other
+84,maintenance/other
+104,code refactoring
+2319,maintenance/other
+382,maintenance/other
+101,code refactoring
+81,maintenance/other
+2126,maintenance/other
+2147,maintenance/other
+132,maintenance/other
+222,maintenance/other
+2274,code refactoring
+2144,feature addition
+2210,bug fix
+2106,code refactoring
+2293,code refactoring
+180,maintenance/other
+2314,bug fix
+173,bug fix
+2236,"feature addition, bug fix"
+338,code refactoring
+2219,maintenance/other
+2244,maintenance/other
+2213,maintenance/other
+256,code refactoring
+2311,code refactoring
+364,bug fix
+352,bug fix
+271,maintenance/other
+287,code refactoring
+2323,maintenance/other
+263,maintenance/other
+2083,maintenance/other
+122,bug fix
+37,maintenance/other
+55,code refactoring
+245,feature addition
+23,maintenance/other
+6,code refactoring
+107,code refactoring
+121,feature addition
+2235,"code refactoring, feature addition"
+2280,feature addition
+162,feature addition
+399,maintenance/other
+2318,code refactoring
+2287,bug fix
+2143,feature addition
+2136,feature addition
+377,maintenance/other
+168,maintenance/other
+2298,feature addition
+5,bug fix
+353,bug fix
+110,bug fix
+2155,code refactoring
+314,code refactoring
+239,bug fix
+2111,code refactoring
+2120,maintenance/other
+14,feature addition
+226,bug fix
+2124,code refactoring
+79,maintenance/other
+105,code refactoring
+2276,Not enough inforamtion
+407,maintenance/other
+268,bug fix
+67,maintenance/other
+27,bug fix
+64,code refactoring
+2234,code refactoring
+2317,bug fix
+211,maintenance/other
+321,code refactoring
+139,maintenance/other
+249,bug fix
+293,maintenance/other
+171,maintenance/other
+2263,maintenance/other
+2292,bug fix
+198,maintenance/other
+134,maintenance/other
+2258,maintenance/other
+2199,code refactoring
+2264,code refactoring
+2197,bug fix
+163,maintenance/other
+252,maintenance/other
+131,maintenance/other
+397,code refactoring
+123,maintenance/other
+335,feature addition
+2282,maintenance/other
+2265,maintenance/other
+183,maintenance/other
+2184,maintenance/other
+2320,feature addition
+289,maintenance/other
+2077,code refactoring
+341,maintenance/other
+2194,bug fix
+2226,maintenance/other
+307,bug fix
+54,feature addition
+8,maintenance/other
+257,Not enough inforamtion
+2220,maintenance/other
+2211,bug fix
+372,maintenance/other
+74,code refactoring
+2096,feature addition
+143,maintenance/other
+35,maintenance/other
+100,maintenance/other
+317,maintenance/other
+2133,maintenance/other
+66,Not enough inforamtion
+78,feature addition
+192,maintenance/other
+2110,feature addition
+380,maintenance/other
+3,Not enough inforamtion
+205,Not enough inforamtion
+212,code refactoring
+142,maintenance/other
+50,maintenance/other
+2107,feature addition
+2223,maintenance/other
+2286,maintenance/other
+53,Not enough inforamtion
+2128,maintenance/other
+368,maintenance/other
+2161,code refactoring
+251,maintenance/other
+386,code refactoring
+369,maintenance/other
+304,code refactoring
+48,maintenance/other
+2150,feature addition
+108,bug fix
+2179,maintenance/other
+235,bug fix
+238,code refactoring
+389,bug fix
+178,maintenance/other
+2065,feature addition
+2269,code refactoring
+2216,bug fix
+2326,maintenance/other
+2140,maintenance/other
+255,bug fix
+2285,maintenance/other
+333,"feature addition, code refactoring"
+259,maintenance/other
+408,maintenance/other
+2204,maintenance/other
+202,Not enough inforamtion
+2171,feature addition
+2233,maintenance/other
+312,maintenance/other
+406,bug fix
+334,code refactoring
+2115,code refactoring
+2131,maintenance/other
+2173,maintenance/other
+2169,maintenance/other
+2164,code refactoring
+2196,bug fix
+2072,code refactoring
+199,code refactoring
+2239,code refactoring
+10,maintenance/other
+2145,code refactoring
+354,maintenance/other
+383,maintenance/other
+31,Not enough inforamtion
+2142,maintenance/other
+242,code refactoring
+281,"code refactoring, feature addition"
+296,maintenance/other
+2240,code refactoring
+361,maintenance/other
+332,bug fix
+329,feature addition
+2192,code refactoring
+344,maintenance/other
+355,maintenance/other
+2305,feature addition
+308,maintenance/other
+373,bug fix
+391,maintenance/other
+2159,maintenance/other
+2281,maintenance/other
+326,code refactoring
+254,code refactoring
+291,maintenance/other
+261,maintenance/other
+156,bug fix
+117,maintenance/other
+2093,code refactoring
+273,feature addition
+2119,bug fix
+2086,maintenance/other
+228,code refactoring
+2252,feature addition
+2301,maintenance/other
+49,maintenance/other
+18,maintenance/other
+379,maintenance/other
+83,maintenance/other
+2227,maintenance/other
+2190,maintenance/other
+32,maintenance/other
+93,feature addition
+2183,feature addition
+2191,maintenance/other
+302,code refactoring
+56,bug fix
+2321,bug fix
+2148,maintenance/other
+2180,feature addition
+392,feature addition
+26,maintenance/other
+301,feature addition
+2105,code refactoring
+2312,maintenance/other
+80,maintenance/other
+384,feature addition
+2228,feature addition
+2275,bug fix
+15,feature addition
+337,maintenance/other
+278,maintenance/other
+2088,maintenance/other
+2283,code refactoring
+225,code refactoring
+2185,feature addition
+97,code refactoring
+2154,bug fix
+2166,bug fix
+2224,code refactoring
+89,maintenance/other
+247,bug fix
+149,maintenance/other
+220,maintenance/other
+359,feature addition
+2251,code refactoring
+4,code refactoring
+161,bug fix
+164,Not enough inforamtion
+214,maintenance/other
+2175,bug fix
+2229,code refactoring
+2167,maintenance/other
+61,code refactoring
+2260,code refactoring
+2138,code refactoring
+412,bug fix
+223,bug fix
+398,feature addition
+2181,maintenance/other
+2297,code refactoring
+76,maintenance/other
+2130,maintenance/other
+172,Not enough inforamtion
+388,maintenance/other
+410,maintenance/other
+94,maintenance/other
+51,code refactoring
+2121,code refactoring
+12,code refactoring
+177,maintenance/other
+196,maintenance/other
+2193,maintenance/other
+274,maintenance/other
+73,maintenance/other
+363,"feature addition, code refactoring"
+2304,bug fix
+98,maintenance/other
+358,maintenance/other
+298,feature addition
+240,"code refactoring, bug fix"
+2156,feature addition
+2266,feature addition
+103,code refactoring
+30,bug fix
+2270,maintenance/other
+350,maintenance/other
+265,code refactoring
+193,Not enough inforamtion
+29,maintenance/other
+269,feature addition
+216,feature addition
+327,maintenance/other
+2299,maintenance/other
+86,Not enough inforamtion
+2256,maintenance/other
+2084,maintenance/other
+2091,code refactoring
+2316,feature addition
+112,maintenance/other
+16,bug fix
+22,maintenance/other
+413,feature addition
+2302,bug fix
+2206,bug fix
+88,maintenance/other
+375,maintenance/other
+2205,feature addition
+311,maintenance/other
+45,feature addition
+217,maintenance/other
+2250,code refactoring
+243,code refactoring
+136,maintenance/other
+28,maintenance/other
+2157,code refactoring
+7,feature addition
+246,bug fix
+409,maintenance/other
+277,feature addition
+2214,bug fix
+2187,code refactoring
+77,maintenance/other
+2230,code refactoring
+41,code refactoring
+328,code refactoring
+102,code refactoring
