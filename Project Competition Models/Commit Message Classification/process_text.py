@@ -27,56 +27,64 @@ def tokenize_text_in_batches(texts, batch_size=50):
     return np.vstack(embeddings)
 
 def label_to_num(labels):
-    num_labels = []
-    for i in labels:
-        if i == 'Negative':
-            num_labels.append(0)
-        elif i == 'Neutral':
-            num_labels.append(1)
-        else:
-            num_labels.append(2)
-    return num_labels
+    switcher = {
+        'bug fix': 0,
+        'feature addition': 1,
+        'code refactoring': 2,
+        'maintenance/other': 3,
+        'not enough information': 4,
+        'not enough inforamtion': 4
+    }
+    if pd.isna(labels):
+        return [-2]
+    return [switcher.get(label.strip().lower(), -1) for label in labels.split(',')]
 
+
+#Function to remove nulls
 def preprocess_text(data, column_name):
     return data[column_name].fillna("").astype(str)
 
 #Load in data
 print("Loading data...")
-X_train = pd.read_csv('Datasets/training_data.csv')
-X_train = X_train.drop(['Id', 'Commit Hash', 'Old Contents', 'New Contents'], axis=1).values
-y_train = pd.read_csv('Datasets/training_labels.csv')
-y_train = y_train.drop(['Id'], axis=1).values
+pre_X_train = pd.read_csv('Datasets/training_data.csv')
+pre_X_train = pre_X_train.drop(['id', 'Commit Hash', 'Old Contents', 'New Contents'], axis=1)
+pre_y_train = pd.read_csv('Datasets/training_label.csv')
+pre_y_train = pre_y_train.drop(['id'], axis=1)
 
-X_dev = pd.read_csv('Datasets/validation_data.csv.csv')
-X_dev = X_dev.drop(['Id', 'Commit Hash', 'Old Contents', 'New Contents'], axis=1).values
-y_dev = pd.read_csv('Datasets/validation_label.csv.csv')
-y_dev = y_dev.drop(['Id'], axis=1).values
+pre_X_dev = pd.read_csv('Datasets/validation_data.csv')
+pre_X_dev = pre_X_dev.drop(['id', 'Commit Hash', 'Old Contents', 'New Contents'], axis=1)
+pre_y_dev = pd.read_csv('Datasets/validation_label.csv')
+pre_y_dev = pre_y_dev.drop(['id'], axis=1)
 
-X_test = pd.read_csv('Datasets/testing_data.csv.csv')
-X_test = X_test.drop(['Id', 'Commit Hash', 'Old Contents', 'New Contents'], axis=1).values
-
-#clean data
-unprocessed_train_dev['Review Text'] = preprocess_text(unprocessed_train_dev, column_name='Review Text')
-unprocessed_test['Review Text'] = preprocess_text(unprocessed_test, column_name='Review Text')
-
-#split train into train and dev
-X_train, X_dev, y_train, y_dev= train_test_split(unprocessed_train_dev['Review Text'], unprocessed_train_dev['Ground_Truth'], test_size=0.1, random_state=42)
+pre_X_test = pd.read_csv('Datasets/testing_data.csv')
+pre_X_test = pre_X_test.drop(['id', 'Commit Hash', 'Old Contents', 'New Contents'], axis=1)
 
 #process data
 print("processing training data...")
-processed_train = pd.DataFrame(tokenize_text_in_batches(X_train.tolist()))
-processed_train_labels = pd.DataFrame(label_to_num(y_train))
+processed_train = pd.concat([pd.DataFrame(tokenize_text_in_batches(pre_X_train['Subject'].tolist())),
+                             pd.DataFrame(tokenize_text_in_batches(pre_X_train['Message'].tolist()))], axis=1, ignore_index=True)
+processed_train_labels = pd.DataFrame(pre_y_train['Ground truth'].apply(label_to_num))
 print("processing dev data...")
-processed_dev = pd.DataFrame(tokenize_text_in_batches(X_dev.tolist()))
-processed_dev_labels = pd.DataFrame(label_to_num(y_dev))
+processed_dev = pd.concat([pd.DataFrame(tokenize_text_in_batches(pre_X_dev['Subject'].tolist())),
+                             pd.DataFrame(tokenize_text_in_batches(pre_X_dev['Message'].tolist()))], axis=1, ignore_index=True)
+processed_dev_labels = pd.DataFrame(pre_y_dev['Ground truth'].apply(label_to_num))
 print("processing test data...")
-processed_test = pd.DataFrame(tokenize_text_in_batches(unprocessed_test['Review Text'].tolist()))
+processed_test = pd.concat([pd.DataFrame(tokenize_text_in_batches(pre_X_test['Subject'].tolist())),
+                             pd.DataFrame(tokenize_text_in_batches(pre_X_test['Message'].tolist()))], axis=1, ignore_index=True)
+
+#JSONL Writer Function(From ChatGPT)
+def save_to_jsonl(data, file_path):
+    with open(file_path, 'w') as f:
+        for record in data:
+            f.write(json.dumps(record) + '\n')
 
 #save to processed files
 print("Saving data...")
-processed_train.to_csv('data/text_train.csv', index=False)
-processed_train_labels.to_csv('data/text_train_labels.csv', index=False)
-processed_dev.to_csv('data/text_dev.csv', index=False)
-processed_dev_labels.to_csv('data/text_dev_labels.csv', index=False)
-processed_test.to_csv('data/text_test.csv', index=False)
+processed_train.to_csv('Datasets/X_train.csv', index=False)
+save_to_jsonl(processed_train_labels.values.tolist(), 'Datasets/y_train.jsonl')
+
+processed_dev.to_csv('Datasets/X_dev.csv', index=False)
+save_to_jsonl(processed_dev_labels.values.tolist(), 'Datasets/y_dev.jsonl')
+
+processed_test.to_csv('Datasets/X_test.csv', index=False)
 print("Done!")
