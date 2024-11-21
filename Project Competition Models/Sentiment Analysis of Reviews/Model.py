@@ -30,21 +30,6 @@ print(y_train.value_counts())
 y_train = y_train.values.ravel()
 y_dev = y_dev.values.ravel()
 
-#-----------------------------------------------------------------------------------
-
-# #Initialize Model to Quadratic Discriminant Analysis
-# model1 = sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis()
-# #Fit Model
-# model1.fit(X_train,y_train)
-#
-# #Make Predictions
-# model1_pred = model1.predict(X_dev)
-# print(f"Model 1 accuracy: {accuracy_score(y_dev,model1_pred)}")
-#
-# print("Model 1")
-# print(classification_report(y_dev, model1_pred))
-
-#-----------------------------------------------------------------------------------
 
 #Random Forest Classifier
 model2 = RandomForestClassifier(class_weight='balanced_subsample', max_depth=10, n_estimators=200)
@@ -58,8 +43,6 @@ print(y_dev)
 print(f"Model 2 accuracy: {accuracy_score(y_dev, model2_pred)}")
 
 print(classification_report(y_dev, model2_pred))
-
-#-----------------------------------------------------------------------------------
 
 #Make test predictions and store them in preds.csv
 
